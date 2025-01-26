@@ -16,13 +16,13 @@ body {
     background-color: var(--secondary-color);
 }
 
-/* Limitation de la largeur de la page */
+
 body, main {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 10px;
 }
 
-/* Header Styles */
+
 header {
     display: block;
     justify-content: space-evenly;
@@ -47,10 +47,11 @@ header nav a:hover {
     color: var(--accent2-color);
 }
 
-/* Conteneur Hero */
+
 .hero {
     position: relative;
     text-align: justify;
+    margin: 0 10px;
 }
 
 .hero img {
@@ -94,7 +95,7 @@ header nav a:hover {
     color: var(--text-color);
 }
 
-/* Section Styles */
+
 section {
     margin: 0 10px;
     padding: 10px;
@@ -117,7 +118,7 @@ section img {
     margin-bottom: 2em;
 }
 
-/* Footer Styles */
+
 footer {
     text-align: left;
     padding: 10px 20px;
@@ -144,7 +145,7 @@ footer .sociallinks a:hover img {
     filter: brightness(50%);
 }
 
-/* Supprime le soulignement des liens d'image des réseaux sociaux */
+
 footer .sociallinks a img {
     text-decoration: none;
 }
