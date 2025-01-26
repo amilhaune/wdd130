@@ -1,0 +1,154 @@
+
+:root {
+    --primary-color: #0099ff; 
+    --secondary-color: #ffffff; 
+    --accent1-color: #003366; 
+    --accent2-color: #ff6347; 
+    --text-color: #333333; 
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+}
+
+/* Limitation de la largeur de la page */
+body, main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    display: block;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+}
+
+header img {
+    width: 150px;
+}
+
+header nav a {
+    margin: 0 10px;
+    color: var(--accent1-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+header nav a:hover {
+    color: var(--accent2-color);
+}
+
+/* Conteneur Hero */
+.hero {
+    position: relative;
+    text-align: justify;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--secondary-color);
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    text-shadow: 3px 5px 8px var(--accent1-color);
+}
+
+.hero article {
+    position: absolute;
+    bottom: 23%;
+    right: 2%;
+    left: 2%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 8px;
+    max-width: 840px
+}
+
+.hero article img {
+    float: right;
+    width: 200px;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+
+.hero article p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+/* Section Styles */
+section {
+    margin: 0 10px;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border-radius: 5px;
+}
+
+section h2 {
+    font-family: 'Pacifico', cursive;
+    color: var(--primary-color);
+    
+}
+
+section img {
+    width: calc(50% - 20px);
+    margin: 0 5px 5px 0;    
+    border-radius: 8px;
+    display: block;
+    margin-bottom: 2em;
+}
+
+/* Footer Styles */
+footer {
+    text-align: left;
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+}
+
+footer p {
+    margin: 0 10px;
+}
+
+footer .sociallinks a {
+    margin: 0 10px;
+}
+
+footer .sociallinks img {
+    width: 20px;
+    height: auto;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+footer .sociallinks a:hover img {
+    filter: brightness(50%);
+}
+
+/* Supprime le soulignement des liens d'image des réseaux sociaux */
+footer .sociallinks a img {
+    text-decoration: none;
+}
+
+
+
+
