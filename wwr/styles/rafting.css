@@ -45,7 +45,8 @@ header nav {
     justify-content: center;
     padding: 10px 20px;
     font-family: 'Pacifico', cursive;
-
+    border:  thin solid var(--accent1-color);
+    border-radius: 10px;
 }
 
 header nav a {
@@ -59,7 +60,7 @@ header nav a {
 
 header nav a:hover {
     color: var(--accent2-color);
-    font-weight: 600;
+    font-weight: 700;
     text-decoration: underline;
 
 }
@@ -95,7 +96,7 @@ header nav a:hover {
     left: 2%;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 15px;
-    border-radius: 8px;
+    border-radius: 32px;
     max-width: 840px;
     margin: 0 auto;
 }
@@ -120,21 +121,25 @@ section {
     background-color: var(--secondary-color);
     color: var(--text-color);
     border-radius: 5px;
+    
 }
 
 section h2 {
     font-family: 'Pacifico', cursive;
     color: var(--primary-color);
+
     
 }
 
 section img {
-    width: calc(50% - 20px);
-    margin: 0 5px 5px 0;    
-    border-radius: 8px;
-    display: block;
-    margin-bottom: 2em;
+    width: 250px;
+    margin: 0 10px;    
+    border-radius: 9px;
+    margin-bottom: 10px;
 }
+
+
+
 
 
 footer {
