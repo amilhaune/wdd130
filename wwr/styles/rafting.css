@@ -33,6 +33,7 @@ header img {
     width: 150px;
     height: auto;
     margin: 0;
+    margin-left: 30px;
 }
 
 header nav {
@@ -111,9 +112,8 @@ header nav a:hover {
 
 .history {
     text-align: center;
-    padding: 20px;
-    max-width: 900px;
-    margin: 40px auto;
+    padding: 5px;
+    margin:40px auto; 
     background-color: var(--accent1-color);
     border-radius: 10px;
     box-shadow: 0 0 10px var(--primary-color);
@@ -122,7 +122,7 @@ header nav a:hover {
 .history h2 {
     color: var(--secondary-color);
     font-family: 'Pacifico', cursive;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     text-shadow: 3px 5px 8px var(--primary-color);
     
 }
@@ -133,28 +133,26 @@ header nav a:hover {
     align-items: center;
     justify-content: center;
     gap: 30px;
-    max-width: 900px;
-    margin: 40px auto;
+    margin: 40px;
     flex-wrap: wrap;
 }
 
 .history-content img {
-    width: 250px;
+    width: 200px;
     height: auto;
     border-radius: 9px;
 }
 
 .history-content p {
     flex: 1;
-    text-align: left;
+    text-align: justify;
     color: var(--secondary-color);
 }
 
 
 .adventures {
     text-align: center;
-    padding: 20px;
-    max-width: 900px;
+    padding: 5px;
     margin: 40px auto;
     background-color: var(--accent1-color);
     border-radius: 10px;
@@ -171,9 +169,10 @@ header nav a:hover {
 
 .adventure-gallery{
     display: flex;
-    flex-wrap: wrap ;
+    flex-direction: row;
     justify-content: space-between;
-    gap: 15px;
+    align-items: center;
+    gap: 20px;
     padding: 0 20px;
     
 }
@@ -190,7 +189,6 @@ header nav a:hover {
     width: 100%;
     height: auto;
     border-radius: 5px;
-    max-width: 180px;
 }
 
 .adventure-gallery figcaption {
