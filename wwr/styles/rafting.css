@@ -1,5 +1,4 @@
-
-:root {
+:root{
     --primary-color: #0099ff; 
     --secondary-color: #ffffff; 
     --accent1-color: #003366; 
@@ -10,48 +9,45 @@
 
 body {
     color: var(--text-color);
-    background-color: var(--secondary-color);
+    background-color: var(--accent1-color);
     font-family: 'Open Sans', sans-serif;
 }
 
 
 body, main {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 10px;
+
 }
 
 
 header {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: auto 1fr;
     align-items: center;
-    justify-items: center;
-    padding: 10px 20px;
-    background-color: var(--secondary-color);
+    padding: 20px;
 
 }
 
 header img {
     width: 150px;
     height: auto;
-    margin: 0 10px;
-
+    margin: 0;
 }
 
 header nav {
     display: flex;
     flex-wrap: wrap;
-    list-style: none;
-    justify-content: center;
+    justify-content: flex-end;
+    gap: 20px;
     padding: 10px 20px;
     font-family: 'Pacifico', cursive;
-    border:  thin solid var(--accent1-color);
-    border-radius: 10px;
+    
+    
 }
 
 header nav a {
-    display: block;
-    color: var(--accent1-color);
+    color: var(--secondary-color);
     text-transform: uppercase;
     text-decoration: none;
     font-size: 1rem;
@@ -68,14 +64,13 @@ header nav a:hover {
 
 .hero {
     position: relative;
-    text-align: justify;
-    margin: 0 10px;
+    text-align: center;
 }
 
 .hero img {
-    display: block;
     width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
 .hero h1 {
@@ -97,8 +92,7 @@ header nav a:hover {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 15px;
     border-radius: 32px;
-    max-width: 840px;
-    margin: 0 auto;
+    
 }
 
 .hero article img {
@@ -112,51 +106,125 @@ header nav a:hover {
     font-size: 1rem;
     line-height: 1.5;
     color: var(--text-color);
+
 }
 
-
-section {
-    margin: 0 10px;
-    padding: 10px;
-    background-color: var(--secondary-color);
-    color: var(--text-color);
-    border-radius: 5px;
-    
+.history {
+    text-align: center;
+    padding: 20px;
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: var(--accent1-color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--primary-color);
 }
 
-section h2 {
+.history h2 {
+    color: var(--secondary-color);
     font-family: 'Pacifico', cursive;
-    color: var(--primary-color);
-
+    margin-bottom: 20px;
+    text-shadow: 3px 5px 8px var(--primary-color);
     
 }
 
-section img {
+
+.history-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    max-width: 900px;
+    margin: 40px auto;
+    flex-wrap: wrap;
+}
+
+.history-content img {
     width: 250px;
-    margin: 0 10px;    
+    height: auto;
     border-radius: 9px;
-    margin-bottom: 10px;
+}
+
+.history-content p {
+    flex: 1;
+    text-align: left;
+    color: var(--secondary-color);
 }
 
 
+.adventures {
+    text-align: center;
+    padding: 20px;
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: var(--accent1-color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--primary-color);
+}
 
+.adventures h2 {
+    color: var(--secondary-color);
+    font-family: 'Pacifico', cursive;
+    margin-bottom: 20px;
+    text-shadow: 3px 5px 8px var(--primary-color);
+}
+
+
+.adventure-gallery{
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 0 20px;
+    
+}
+
+.adventure-gallery figure {
+    flex: 1 1 calc(20% - 15px);
+    text-align: center;
+    background: var(--accent1-color);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    max-width: 180px;
+}
+
+.adventure-gallery figcaption {
+    font-size: 0.9rem;
+    margin-top: 4px;
+    color: var(--secondary-color);
+    text-align: center;
+}
 
 
 footer {
-    text-align: left;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
     padding: 10px 20px;
-    background-color: var(--secondary-color);
-    color: var(--accent1-color);
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    
 }
 
 footer p {
     margin: 0 10px;
     font-family: 'Pacifico', cursive;
+    
+}
+
+footer .sociallinks {
+    display: flex;
+    gap: 10px;
 }
 
 footer .sociallinks a {
     margin: 0 10px;
-    color: var(--accent1-color);
+    color: var(--secondary-color);
     text-decoration: none;
 }
 
