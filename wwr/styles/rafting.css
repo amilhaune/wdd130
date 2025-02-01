@@ -208,7 +208,7 @@ footer {
     padding: 10px 20px;
     background-color: var(--accent1-color);
     color: var(--secondary-color);
-    
+    margin:40px auto;
 }
 
 footer p {
