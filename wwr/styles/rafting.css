@@ -237,7 +237,178 @@ footer .sociallinks a:hover img {
     filter: brightness(50%);
 }
 
+footer .sociallinks a:hover {
+    color: var(--accent2-color);
+    text-decoration: underline;
+}
 
+.company-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    max-width: 1100px;
+    margin: auto;
+    background-color: var(--accent1-color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--primary-color);
+}
+
+.info-text {
+    flex: 1;
+}
+.info-text h1 {
+    color: var(--secondary-color);
+    font-family: 'Pacifico', cursive;
+    margin-bottom: 100px;
+    text-shadow: 3px 5px 8px var(--primary-color);
+}
+.info-text p {
+    color: var(--secondary-color);
+    text-align: justify;
+}
+.info-text  a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    margin-top: 10px;
+    margin: 0 10px;
+    font-family: 'Pacifico', cursive;
+    font-weight: 700;
+
+}
+
+.info-text a:hover {
+    color: var(--accent2-color);
+    text-decoration: underline;
+}
+
+
+.map iframe {
+    width: 400px;
+    height: 300px;
+}
+
+.meet-our-team {
+    text-align: center;
+    padding: 5px;
+    margin: 40px auto;
+    background-color: var(--accent1-color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--primary-color);
+}
+
+.meet-our-team h2 {
+    color: var(--secondary-color);
+    font-family: 'Pacifico', cursive;
+    margin-bottom: 20px;
+    text-shadow: 3px 5px 8px var(--primary-color);
+}
+
+.meet-our-team-gallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px;
+    
+}
+
+.meet-our-team-gallery figure {
+    flex: 1 1 calc(20% - 15px);
+    text-align: center;
+    background: var(--accent1-color);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.meet-our-team-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.meet-our-team-gallery figcaption {
+    font-size: 0.9rem;
+    margin-top: 4px;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+
+.contact-form {
+    width: 80%;
+    margin: auto;
+    background-color: var(--accent1-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--primary-color);
+}
+
+.contact-form h2 {
+    text-align: center;
+    color: var(--secondary-color);
+    text-shadow: 3px 5px 8px var(--primary-color);
+    font-family: 'Pacifico', cursive;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form fieldset {
+    border: none;
+    padding: 10px;
+    text-align: center;
+    color: var(--secondary-color)
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    font-size: 1rem;
+    line-height: 1.5;
+
+}
+
+
+.contact-form button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.contact-form button:hover {
+    background-color: var(--accent2-color);
+}
+
+
+
+footer a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    margin-top: 10px;
+    margin: 0 10px;
+    font-family: 'Pacifico', cursive;
+    font-weight: 700;
+
+}
+
+footer a:hover {
+    color: var(--accent2-color);
+    text-decoration: underline;
+}
 
 
 
