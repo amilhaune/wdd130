@@ -119,7 +119,7 @@ header nav a:hover {
     box-shadow: 0 0 10px var(--primary-color);
 }
 
-.history h2 {
+.history h2, .cta h1, .trip-descriptions h2, .trip-table h2 {
     color: var(--secondary-color);
     font-family: 'Pacifico', cursive;
     margin-bottom: 5px;
@@ -410,7 +410,226 @@ footer a:hover {
     color: var(--accent2-color);
     text-decoration: underline;
 }
+.hero1 {
+    position: relative;
+    text-align: center;
+}
 
+.hero1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 75%;
+    right: 2%;
+    left: 2%;
+    background-color: transparent;
+    color: var(--secondary-color);
+    padding: 15px;
+    border-radius: 32px;
+    
+}
+.hero-text h1{
+    color: var(--secondary-color);
+    font-family: 'Pacifico', cursive;
+    margin-bottom: 20px;
+    text-shadow: 3px 5px 8px var(--primary-color);
+}
+
+
+.newsletter {
+    text-align: center;
+    padding: 5px;
+    margin: 40px auto;
+    background-color: var(--accent1-color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--primary-color);
+    color: var(--secondary-color)
+}
+
+.newsletter h2 {
+    color: var(--secondary-color);
+    font-family: 'Pacifico', cursive;
+    margin-bottom: 20px;
+    text-shadow: 3px 5px 8px var(--primary-color);
+}
+
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.newsletter form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    font-size: 1rem;
+    line-height: 1.5;
+
+}
+
+
+.newsletter form button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.newsletter form  button:hover {
+    background-color: var(--accent2-color);
+}
+
+
+
+.hero-text .btn {
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.hero-text .btn:hover{
+    color: var(--accent2-color);
+    text-decoration: underline;
+}
+
+.grid-layout {
+    text-align: center;
+    padding: 5px;
+    margin: 40px auto;
+    background-color: var(--accent1-color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--primary-color);
+    color: var(--secondary-color)
+}
+.grid-layout h2{
+    color: var(--secondary-color);
+    font-family: 'Pacifico', cursive;
+    margin-bottom: 20px;
+    text-shadow: 3px 5px 8px var(--primary-color);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px;
+}
+.grid-item{
+    text-align: center;
+}
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.cta {
+    text-align: center;
+    padding: 40px;
+    margin: 40px auto;
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--primary-color);
+}
+
+.cta .btn {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.cta .btn:hover {
+    background-color: var(--accent2-color);
+}
+
+.trip-descriptions {
+    margin: 40px auto;
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--primary-color);
+    text-align: center;
+}
+.trip-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px;
+}
+.trip {
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--primary-color);
+    text-align: center;
+}
+.trip img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.trip-table {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--primary-color);
+    text-align: center;
+}
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px var(--primary-color);
+}
+.trip-table th, .trip-table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid var(--primary-color);
+}
+.trip-table th {
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    text-transform: uppercase;
+}
+
+.trip-table tr:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
 
 
 
